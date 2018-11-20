@@ -48,19 +48,8 @@ namespace Linq_Problems
             //Console.WriteLine("Class Average is: " + studentGradeAverage / 4);
             //Console.ReadLine();
 
-            //List<string> name = new List<string>() { "Terrill" };
 
-            //var frequency = from x in name
-            //                group x by x into y
-            //                select y;
-            //Console.WriteLine("Frequency");
-            //foreach (var letter in frequency)
-            //{
-            //    Console.WriteLine(letter.Key + "" + letter.Count());
-            //}
-
-
-            var frequency = from f in "terrill".ToList()
+            var frequency = from f in "terrill"
                             group f by f into letterfrequency
                             orderby letterfrequency.Key
                             select new
